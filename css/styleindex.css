@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+
+strong {
+    color: deeppink;
+}
+
+.wrapper {
+    width: 99%;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .25);
+}
+
+header .logo {
+    display: inline-block;
+    width: 75px;
+    vertical-align: middle;
+    padding: 1% 0%;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
+    list-style-type: none;
+    flex-direction: row;
+    white-space: nowrap;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 20px 6px;
+    text-decoration: none;
+    color: darkslategrey;
+    font-size: 18px;
+}
+
+header nav ul li:nth-child(1) {
+    border-bottom: 2px solid deeppink;
+}
+
+header nav ul li a:hover {
+    color: deeppink;
+}
+
+header nav ul li a:active {
+    opacity: 0.3;
+}
+
+header nav ul .dropdown {
+    position: relative;
+    margin-right: 10px;
+}
+
+header nav ul .dropdown:hover .dropdown-content {
+    display: block;
+    animation: pop 0.25s ease;
+}
+
+header nav ul .dropdown:after {
+    border-color: deeppink transparent transparent transparent;
+    border-width: 7px 6px 0 6px;
+    border-style: solid;
+    display: block;
+    content: " ";
+    position: absolute;
+    top: 29px;
+    left: 90px;
+}
+
+header nav ul .dropdown-content {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    background: white;
+    box-shadow: 0 -2px 2px 2px lightgrey;
+    padding: 5px 10px 10px 10px;
+}
+
+header nav ul .dropdown-content li {
+    padding: 5px 0;
+    border-bottom: none !important;
+}
+
+header nav ul .dropdown-content li a {
+    color: darkslategrey;
+    padding: 8px 7px;
+}
+
+header nav ul .dropdown-content li a:hover {
+    color: deeppink;
+}
+
+.banner {
+    padding: 150px 0;
+    background-image: url(../img/background.jpeg);
+    background-position: 0px -987px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .25);
+    font-size: 18px;
+    color: white;
+}
+
+.banner-box {
+    text-align: center;
+}
+
+.text {
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: 1024px;
+}
+
+.text h1 {
+    text-align: center;
+}
+
+.text-box {
+    width: 98%;
+    margin: 0 1% 10px 1%;
+}
+
+.text-box img {
+    width: 140px;
+    float: right;
+}
+
+footer {
+    position: relative;
+    background-image: url(../img/background.jpeg);
+    background-position: 0px -880px;
+    box-shadow: 0px -10px 20px 0px rgba(0, 0, 0, .25);
+    color: white;
+    font-size: 18px;
+}
+
+footer nav {
+    display: flex;
+    align-items: center;
+}
+
+footer nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-right: auto;
+}
+
+footer nav ul:last-child {
+    margin-right: 0;
+}
+
+footer nav ul li {
+    display: block;
+    padding: 20px 6px;
+    color: lightgrey;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+    p {
+        font-size: 16px;
+    }
+    header nav .logo {
+        width: 65px;
+    }
+    header nav ul li a {
+        padding: 16px 4px;
+        font-size: 16px;
+    }
+    header nav ul .dropdown:after {
+        top: 24px;
+        left: 80px;
+    }
+    footer nav ul li {
+        padding: 16px 4px;
+        font-size: 13px;
+    }
+}
+    
+
+@media only screen and (max-width: 666px) {
+    header nav .logo {
+        position: absolute;
+    }
+    header nav {
+        display: block;
+    }
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+    header nav ul .dropdown:after {
+        top: 23px;
+        left: 59%;
+    }
+    header nav ul .dropdown-content {
+        left: 50%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    p {
+        font-size: 14px;
+    }
+    header nav .logo {
+        width: 50px;
+        position: absolute;
+        float: left;
+    }
+    header nav ul li a {
+        padding: 14px 4px;
+        font-size: 14px;
+    }
+    header nav ul .dropdown:after {
+        top: 21px;
+        left: 61%;
+    }
+    footer nav ul li {
+        padding: 14px 4px;
+        font-size: 12px;
+    }
+}
+
+@keyframes pop {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
+}

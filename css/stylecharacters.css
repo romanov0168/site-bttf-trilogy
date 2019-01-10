@@ -1,0 +1,92 @@
+header nav ul li:nth-child(1) {
+    border-bottom: none;
+}
+
+header nav ul li:nth-child(3) {
+    border-bottom: 2px solid deeppink;
+}
+
+.banner {
+    padding: 10px 0;
+}
+
+.card-box2 {
+    display: block;
+    padding: 30px 0 45px;
+    max-width: 1024px;
+    text-align: center;
+}
+
+.card-box2 .card2 {
+    display: inline-block;
+    width: 294px;
+    margin: 10px;
+    padding-top: 10px;
+    border-top: 5px solid deeppink;
+    box-shadow: 0 2px 2px 2px lightgrey;
+}
+
+.card-box2 .card2 .card-img {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+    border: 5px solid white;
+    border-radius: 100px;
+    box-shadow: 0 2px 1px 1px lightgrey;
+}
+
+.card-box2 .card2 .member1 {
+    background: url(../img/marty.jpg) no-repeat -100px -10px;
+}
+
+.card-box2 .card2 .member2 {
+    background: url(../img/doc.png) no-repeat -130px -5px;
+}
+
+.card-box2 .card2 .member3 {
+    background: url(../img/george.jpg) no-repeat -110px -5px;
+}
+
+.card-box2 .card2 .member4 {
+    background: url(../img/lorraine.jpg) no-repeat -80px -15px;
+}
+
+.card-box2 .card2 .member5 {
+    background: url(../img/biff.jpg) no-repeat -70px -10px;
+}
+
+.card-box2 .card2 .member6 {
+    background: url(../img/griff.jpg) no-repeat -80px -5px;
+}
+
+.card-box2 .card2 .member7 {
+    background: url(../img/buford.jpg) no-repeat -70px -15px;
+}
+
+.card-box2 .card2 .member8 {
+    background: url(../img/clara.jpg) no-repeat -100px -30px;
+}
+
+.card-box2 .card2 .member9 {
+    background: url(../img/jennifer.jpg) no-repeat -70px -10px;
+}
+
+.card-box2 .card2 .member10 {
+    background: url(../img/einstein.jpg) no-repeat -100px -10px;
+}
+
+.card-box2 .card-text2 {
+    text-align: center;
+    font-size: 14px;
+    width: 96%;
+    margin: 0 2% 10px 2%;
+}
+
+.card-box2 .card-text2 h3 {
+    font-weight: normal;
+    font-style: italic;
+}
+
+.card-box2 .card2 p {
+    text-align: left;
+}

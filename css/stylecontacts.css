@@ -1,0 +1,140 @@
+header nav ul li:nth-child(1) {
+    border-bottom: none;
+}
+
+header nav ul li:nth-child(7) {
+    border-bottom: 2px solid deeppink;
+}
+
+.banner {
+    padding: 10px 0;
+}
+
+.card-box {
+    display: block;
+    margin: 0 auto;
+}
+
+.text .card-box .map-box {
+    display: inline-block;
+    width: 34%;
+    margin-right: 3%;
+}
+
+.text .card-box .map-box .map {
+    border-top: 5px solid deeppink;
+}
+
+.text .card-box .msg-box {
+    display: inline-block;
+    width: 62%;
+}
+
+.text .card-box .msg-box:nth-child(4) {
+    display: none;
+}
+
+.text .card-box .msg-box form .text-area {
+    width: 97%;
+    height: 313px;
+    resize: none;
+    margin-bottom: 20px;
+    padding: 3% 2%;
+    background-color: rgb(243, 243, 243);
+    border: none;
+    border-left: 5px solid deeppink;
+    font-style: italic;
+}
+
+.text .card-box .msg-box form .email {
+    width: 53%;
+    margin-right: 3%;
+    padding: 3% 2%;
+    background-color: rgb(243, 243, 243);
+    border: none;
+    border-left: 5px solid deeppink;
+    font-style: italic;
+}
+
+.text .card-box .msg-box form button {
+    width: 36%;
+    outline: none;
+    background-image: url(../img/274x405design_01.jpg);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-position: -50px -125px;
+    border: 2px solid deeppink;
+    border-radius: 50px 5px 5px 50px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.text .card-box .msg-box form button:hover {
+    background-blend-mode: normal;
+    box-shadow: 0 2px 2px 2px lightgrey;
+    animation: fly 1s infinite linear;
+}
+
+.text .card-box .msg-box form button a {
+    display: block;
+    padding: 5% 25% 6% 0;
+}
+
+.text .card-box .msg-box form button a:hover {
+    color: white;
+}
+
+.text .card-box .msg-box form button a:active {
+    opacity: 0.3;
+}
+
+footer {
+    margin-top: 120px;
+}
+
+@media only screen and (max-width: 768px) {
+    .text .card-box .msg-box form button {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .text .card-box .map-box {
+        width: 100%;
+        margin-right: 0;
+    }
+    .text .card-box .msg-box {
+        width: 98%;
+    }
+    .text .card-box .msg-box form button {
+        background-image: url(../img/183x270design_01.jpg);
+        background-position: -30px -80px;
+        font-size: 14px;
+    }
+    .text .card-box .msg-box:nth-child(2) {
+        display: none;
+    }
+    .text .card-box .msg-box:nth-child(4) {
+        display: inline-block;
+    }
+}
+
+@keyframes fly {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-1px);
+    }
+    50% {
+        transform: translateY(0px);
+        transform: translateX(-2px);
+    }
+    75% {
+        transform: translateY(1px);
+        transform: translateX(1px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

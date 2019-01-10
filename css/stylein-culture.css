@@ -1,0 +1,22 @@
+header nav ul li:nth-child(1) {
+    border-bottom: none;
+}
+
+header nav ul li:nth-child(6) {
+    border-bottom: 2px solid deeppink;
+}
+
+.banner {
+    padding: 10px 0;
+}
+
+.text-box ul li {
+    list-style-type: none;
+   }
+
+.text-box ul li:before {
+    color: deeppink;
+    content: "■";
+    padding-right: 10px;
+    line-height: 1.5;
+   }
