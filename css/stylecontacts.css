@@ -71,8 +71,8 @@ header nav ul li:nth-child(7) {
 
 .text .card-box .msg-box form button:hover {
     background-blend-mode: normal;
-    box-shadow: 0 2px 2px 2px lightgrey;
-    animation: fly 1s infinite linear;
+    /*    box-shadow: 0 2px 2px 2px lightgrey;*/
+    animation: do-levitation .8s alternate ease-in-out infinite;
 }
 
 .text .card-box .msg-box form button a {
@@ -103,38 +103,34 @@ footer {
         width: 100%;
         margin-right: 0;
     }
+
     .text .card-box .msg-box {
         width: 98%;
     }
+
     .text .card-box .msg-box form button {
         background-image: url(../img/183x270design_01.jpg);
         background-position: -30px -80px;
         font-size: 14px;
     }
+
     .text .card-box .msg-box:nth-child(2) {
         display: none;
     }
+
     .text .card-box .msg-box:nth-child(4) {
         display: inline-block;
     }
 }
 
-@keyframes fly {
+@keyframes do-levitation {
     0% {
-        transform: translateY(0px);
+        transform: translate(0, -1px);
+        box-shadow: 0 2px 1px 1px lightgrey;
     }
-    25% {
-        transform: translateY(-1px);
-    }
-    50% {
-        transform: translateY(0px);
-        transform: translateX(-2px);
-    }
-    75% {
-        transform: translateY(1px);
-        transform: translateX(1px);
-    }
+
     100% {
-        transform: translateY(0px);
+        transform: translate(0, -5px);
+        box-shadow: 0 2px 2px 2px lightgrey;
     }
 }
