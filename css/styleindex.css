@@ -68,6 +68,7 @@ header nav ul .dropdown {
 header nav ul .dropdown:hover .dropdown-content {
     display: block;
     animation: pop 0.25s ease;
+    z-index: 500;
 }
 
 header nav ul .dropdown:after {
@@ -77,8 +78,8 @@ header nav ul .dropdown:after {
     display: block;
     content: " ";
     position: absolute;
-    top: 29px;
-    left: 90px;
+    top: 75%;
+    left: 75%;
 }
 
 header nav ul .dropdown-content {
@@ -173,39 +174,42 @@ footer nav ul li {
     p {
         font-size: 16px;
     }
+
     header nav .logo {
         width: 65px;
     }
+
     header nav ul li a {
         padding: 16px 4px;
         font-size: 16px;
     }
-    header nav ul .dropdown:after {
-        top: 24px;
-        left: 80px;
-    }
+
     footer nav ul li {
         padding: 16px 4px;
         font-size: 13px;
     }
 }
-    
+
 
 @media only screen and (max-width: 666px) {
     header nav .logo {
         position: absolute;
     }
+
     header nav {
         display: block;
     }
+
     header nav ul {
         display: block;
         text-align: center;
     }
+
     header nav ul .dropdown:after {
-        top: 23px;
-        left: 59%;
+        top: 75%;
+        left: 55%;
     }
+
     header nav ul .dropdown-content {
         left: 50%;
     }
@@ -215,19 +219,18 @@ footer nav ul li {
     p {
         font-size: 14px;
     }
+
     header nav .logo {
         width: 50px;
         position: absolute;
         float: left;
     }
+
     header nav ul li a {
         padding: 14px 4px;
         font-size: 14px;
     }
-    header nav ul .dropdown:after {
-        top: 21px;
-        left: 61%;
-    }
+
     footer nav ul li {
         padding: 14px 4px;
         font-size: 12px;
@@ -238,15 +241,19 @@ footer nav ul li {
     0% {
         opacity: 0;
     }
+
     25% {
         opacity: 0.25;
     }
+
     50% {
         opacity: 0.5;
     }
+
     75% {
         opacity: 0.75;
     }
+
     100% {
         opacity: 1;
     }
