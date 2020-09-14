@@ -75,6 +75,36 @@ header nav ul li:nth-child(3) {
     background: url(../img/einstein.jpg) no-repeat -100px -10px;
 }
 
+#marty:target .card-img,
+#emmett:target .card-img,
+#george:target .card-img,
+#lorraine:target .card-img,
+#biff:target .card-img,
+#griff:target .card-img,
+#buford:target .card-img,
+#clara:target .card-img,
+#jennifer:target .card-img,
+#einstein:target .card-img {
+    animation-duration: 1.3s;
+    animation-iteration-count: 2;
+    animation-name: bounce-7;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+}
+
+/*
+#einstein .card-text2 h4 {
+    display: none;
+}
+
+#einstein:target .card-text2 h4 {
+    display: block;
+}
+
+#marty:not(:target) .card-text2 h4 {
+    display: none;
+}
+*/
+
 .card-box2 .card-text2 {
     text-align: center;
     font-size: 14px;
@@ -89,4 +119,35 @@ header nav ul li:nth-child(3) {
 
 .card-box2 .card2 p {
     text-align: left;
+}
+
+@keyframes bounce-7 {
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    10% {
+        transform: scale(1.065, .935) translateY(0);
+    }
+
+    30% {
+        transform: scale(.935, 1.065) translateY(-65px);
+        box-shadow: 0 2px 2px 2px lightgrey;
+    }
+
+    50% {
+        transform: scale(1.0325, .9675) translateY(0);
+    }
+
+    57% {
+        transform: scale(1, 1) translateY(-4, 55px);
+    }
+
+    64% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
 }
